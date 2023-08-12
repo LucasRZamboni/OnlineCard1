@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-fundo: rgba(255, 255, 255, 0.527);
+    --cor-titulo: rgb(255, 136, 0);
+    --fundo-baixo: black;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+}
+.container-principal{
+    width: 100%;
+    min-height: 100vh;
+    transition: .2s ease-in-out;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.topo,
+.baixo{
+    height: calc(100vh / 2);
+    width: 100%;
+}
+.topo{
+    background:  var(--cor-fundo);
+    box-shadow: 0 5px 10px rgba(201, 201, 201, 0.747);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.topo .posicao-titulo,
+.topo .posicao-botao{
+    width: 100%;
+    height: 50%;
+}
+.topo .posicao-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.topo .posicao-titulo .titulo{
+    color: var(--cor-titulo);
+    text-shadow: 0 0 5px black;
+}
+.topo .posicao-titulo .titulo-baixo{
+    position: absolute;
+    top: 115px;
+    right: 135px;
+    font-size: 13px;
+    font-weight: 900;
+}
+.topo .posicao-titulo .imagem-sol{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    left: 25px;
+    top: -10px;
+}
+.baixo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--fundo-baixo);
+}
+.baixo img{
+    width: 100%;
+}
+.container-carrossel{
+    position: relative;
+    width: 100%;
+}
+.gallery-wrapper{
+    overflow-x: hidden;
+}
+.gallery{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+.arrow-right,
+.arrow-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 50px;
+    line-height: 250px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    color: var(--cor-titulo);
+    opacity: 0.3;
+    z-index: 1000;
+}
+.arrow-right{
+    left: auto;
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+.arrow-left:hover,
+.arrow-right:hover{
+    opacity: 1;
+    transition: 1s;
+}
+.item{
+    width: 100px;
+    flex-shrink: 0;
+    opacity: 0.5;
+    transition: all 600ms ease-in-out;
+}
+.current-item{
+    opacity: 1;
+    box-shadow: 4px solid var(--cor-titulo);
+}

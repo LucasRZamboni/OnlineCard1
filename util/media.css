@@ -1,0 +1,16 @@
+@media  screen and (max-width: 768px) {
+    .container-principal{
+        background-image: url("/images/backgroundCell.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media  screen and (min-width: 768px) {
+    .container-principal{
+        background-image: url("/images/backgroundPc.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
