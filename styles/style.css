@@ -46,7 +46,7 @@ body{
     flex-direction: column;
     position: relative;
 }
-.topo .posicao-titulo .titulo{
+.titulo{
     color: var(--cor-titulo);
     text-shadow: 0 0 5px black;
 }
@@ -122,4 +122,86 @@ body{
 .current-item{
     opacity: 1;
     box-shadow: 4px solid var(--cor-titulo);
+}
+.posicao-botao{
+    position: relative;
+}
+.posicao-botao .telefones{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(30%, -20%);
+    background-color: rgba(14, 13, 13, 0.726);
+    width: 250px;
+    height: 220px;
+    border: 3px solid var(--cor-titulo);
+    border-radius: 10px;
+    display: none;
+    transition: .3s;
+}
+.posicao-botao .telefones.active{
+    display: block;
+    transition: .3s;
+}
+.posicao-botao .botao{
+    border-radius: 8px;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+}
+
+.posicao-botao .botao:nth-child(2){
+    left: 5px;
+}
+.posicao-botao .botao:nth-child(3){
+    top: 60px;
+    left: 5px;
+}
+.posicao-botao .botao:nth-child(4){
+    top: 120px;
+    left: 5px;
+}
+.posicao-botao .botao:nth-child(2):hover::after,
+.posicao-botao .botao:nth-child(3):hover::after,
+.posicao-botao .botao:nth-child(4):hover::after{
+    width: 160px;
+    transition: .3s;
+    text-align: center;
+    color: black;
+    font-size: 13px;
+    background: var(--cor-titulo);
+}
+.posicao-botao .botao:nth-child(2):hover::after{
+    content: "Visite nosso facebook";
+}
+.posicao-botao .botao:nth-child(3):hover::after{
+    content: "Nossos telefones";
+}
+.posicao-botao .botao:nth-child(4):hover::after{
+    content: "Contato por e-mail";
+}
+.posicao-botao .botao:nth-child(2)::after,
+.posicao-botao .botao:nth-child(3)::after,
+.posicao-botao .botao:nth-child(4)::after{
+    content: "";
+    width: 0px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 45px;
+    border-radius: 5px;
+    transition: .3s;
+    font-size: 0px;
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.posicao-botao .botao img{
+    width: 40px;
+    height: 40px;
 }

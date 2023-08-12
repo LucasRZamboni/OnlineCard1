@@ -28,3 +28,21 @@ controls.forEach(control =>{
             items[currentItem].classList.add('current-item');
     })
 })
+
+
+
+
+
+const telefones = document.querySelector('.telefones');
+    const whatsapp = document.getElementById('whats');
+
+    whatsapp.addEventListener('click', () => {
+        console.log('clicado');
+        if(telefones.classList.contains('active')){
+            telefones.classList.remove('active');
+        }else{
+            telefones.classList.add('active');
+        }
+
+        
+    });
