@@ -1,16 +1,112 @@
-@media  screen and (max-width: 768px) {
-    .container-principal{
-        background-image: url("../images/backgroundCell.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+@media screen and (min-width: 420px) {
+  .gallery img:nth-child(1),
+  .gallery img:nth-child(7),
+  .gallery img:nth-child(8),
+  .gallery img:nth-child(9),
+  .gallery img:nth-child(12){
+    display: none;
+  }
 }
-@media  screen and (min-width: 768px) {
-    .container-principal{
-        background-image: url("../images/backgroundPc.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+@media screen and (max-width: 395px) {
+  .baixo img {
+    max-height: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-principal {
+    background-image: url("../images/backgroundCell.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .baixo img {
+    width: 100%;
+    max-height: 400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-principal {
+    background-image: url("../images/backgroundPc.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .posicao-botao .botao:nth-child(2):hover::after,
+  .posicao-botao .botao:nth-child(3):hover::after,
+  .posicao-botao .botao:nth-child(4):hover::after,
+  .posicao-botao .botao:nth-child(5):hover::after,
+  .posicao-botao .botao:nth-child(6):hover::after {
+    width: 160px;
+    transition: 0.3s;
+    text-align: center;
+    color: black;
+    font-size: 13px;
+    background: var(--cor-titulo);
+  }
+  .posicao-botao .botao:nth-child(4):hover::after {
+    width: 140px;
+  }
+  .posicao-botao .botao:nth-child(3):hover::after {
+    width: 130px;
+  }
+  .posicao-botao .botao:nth-child(6):hover::after {
+    width: 110px;
+  }
+  .posicao-botao .botao:nth-child(2):hover::after {
+    content: "Visite nosso facebook";
+  }
+  .posicao-botao .botao:nth-child(3):hover::after {
+    content: "Nossos telefones";
+  }
+  .posicao-botao .botao:nth-child(4):hover::after {
+    content: "Contato por e-mail";
+  }
+  .posicao-botao .botao:nth-child(5):hover::after {
+    content: "Áreas de atendimento";
+  }
+  .posicao-botao .botao:nth-child(6):hover::after {
+    content: "Onde estamos";
+  }
+  .posicao-botao .botao:nth-child(2)::after,
+  .posicao-botao .botao:nth-child(3)::after,
+  .posicao-botao .botao:nth-child(4)::after {
+    content: "";
+    width: 0px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 45px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 0px;
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    font-weight: 700;
+    padding: 5px;
+  }
+  .posicao-botao .botao:nth-child(5)::after,
+  .posicao-botao .botao:nth-child(6)::after {
+    content: "";
+    width: 0px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    right: 45px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 0px;
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
+    font-weight: 700;
+    padding: 5px;
+  }
 }
