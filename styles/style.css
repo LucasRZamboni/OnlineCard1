@@ -127,7 +127,9 @@ body {
 .posicao-botao {
   position: relative;
 }
-.posicao-botao .telefones {
+.posicao-botao .telefones,
+.posicao-botao .nossosServicos,
+.posicao-botao .local {
   position: absolute;
   left: 0;
   top: 0;
@@ -140,9 +142,29 @@ body {
   display: none;
   transition: 0.3s;
 }
-.posicao-botao .telefones.active {
+.posicao-botao h1{
+    font-size: 25px;
+}
+.posicao-botao .telefones.active,
+.posicao-botao .nossosServicos.active,
+.posicao-botao .local.active {
   display: block;
   transition: 0.3s;
+}
+.posicao-botao  ul li{
+    list-style: none;
+}
+.posicao-botao .local ul li{
+   font-size: 13px;
+}
+.posicao-botao .local ul li ion-icon{
+    color: rgb(0, 204, 255);
+}
+.posicao-botao ul li ion-icon{
+    color: rgb(26, 245, 26);
+}
+.posicao-botao .telefones ion-icon{
+    color: rgb(26, 245, 26);
 }
 .posicao-botao .botao {
   border-radius: 5px;
@@ -151,22 +173,22 @@ body {
   cursor: pointer;
 }
 
-.posicao-botao .botao:nth-child(2) {
+.posicao-botao .botao.facebook {
   left: 5px;
 }
-.posicao-botao .botao:nth-child(3) {
+.posicao-botao .botao.email {
   top: 60px;
   left: 5px;
 }
-.posicao-botao .botao:nth-child(4) {
+.posicao-botao .botao.whatsapp {
   top: 120px;
   left: 5px;
 }
-.posicao-botao .botao:nth-child(5) {
+.posicao-botao .botao.services {
   right: 5px;
   background: var(--botao-services);
 }
-.posicao-botao .botao:nth-child(6) {
+.posicao-botao .botao.maps {
   top: 60px;
   right: 5px;
   background: var(--botao-maps);

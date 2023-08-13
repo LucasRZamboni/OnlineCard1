@@ -9,19 +9,21 @@
 }
 
 @media screen and (max-width: 400px) {
-  .container-principal {
-    background-image: url("../images/backgroundCell.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   .topo .posicao-titulo .imagem-sol {
-    height: 170px;
-    width: 170px;
+    height: 180px;
+    width: 180px;
   }
   .baixo img {
     max-height: 350px;
   }
+}
+@media screen and (max-width: 768px) {
+    .container-principal {
+      background-image: url("../images/backgroundCell.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 }
 @media screen and (min-width: 768px) {
   .container-principal {
@@ -39,7 +41,7 @@
     width: 200px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .posicao-botao .botao:nth-child(2):hover::after,
   .posicao-botao .botao:nth-child(3):hover::after,
   .posicao-botao .botao:nth-child(4):hover::after,

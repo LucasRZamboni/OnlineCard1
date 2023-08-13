@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -39,27 +45,85 @@
           <img class="imagem-sol" src="images/sol.png" alt="imagem do sol" />
         </div>
         <div class="posicao-botao">
-          <div class="telefones">
+          <div class="telefones  active">
             <h1 class="titulo text-center p-3">Nossos contatos</h1>
             <label for="" class="text-light p-2">Hélio:</label>
+            <ion-icon name="call-outline"></ion-icon>
             <a href="">(11) 97581-9253</a>
             <label for="" class="text-light p-2">Lucimara:</label>
-            <a href="https://api.whatsapp.com/send?phone=%2B5511999670155&data=ARCTfkLda-IXrb6htnA4FAAoFKn0GUoz40P3XvQzs-ozru0aXlQaXFT-ULVcA0Lf2ROAa2M_-RGhhzKsXdb668RQf5fjbLMoVzmHEhjh7A2fnI9UP61Bw14lmhtxxdgQaha16s0cULoxP5jREomMZs4&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR2QOt1YtRrvIWS0lz_h3J6OlLmQfNW-MoQkfAEMIg80tmCVxVKfY8M5Uro" target="_blank">(11) 99967-0155</a>
+            <ion-icon name="call-outline"></ion-icon>
+            <a
+              href="https://api.whatsapp.com/send?phone=%2B5511999670155&data=ARCTfkLda-IXrb6htnA4FAAoFKn0GUoz40P3XvQzs-ozru0aXlQaXFT-ULVcA0Lf2ROAa2M_-RGhhzKsXdb668RQf5fjbLMoVzmHEhjh7A2fnI9UP61Bw14lmhtxxdgQaha16s0cULoxP5jREomMZs4&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR2QOt1YtRrvIWS0lz_h3J6OlLmQfNW-MoQkfAEMIg80tmCVxVKfY8M5Uro"
+              target="_blank"
+              >(11) 99967-0155</a
+            >
+            <br>
+            <small class="p-2 text-warning">Os telefones também são Whatsapp</small>
           </div>
-          <a href="https://www.facebook.com/HelioServItu" target="_blank" class="botao facebook">
-            <img src="images/facebook.png" alt="">
+          <div class="nossosServicos">
+            <h1 class="titulo text-center p-3">Nossos Serviços</h1>
+            <ul class="p-3 m-3 bg-gradient rounded-3">
+              <li class="text-danger">
+                <ion-icon name="checkmark-outline"></ion-icon> Venda
+              </li>
+              <li class="text-danger">
+                <ion-icon name="checkmark-outline"></ion-icon> Instalação
+              </li>
+              <li class="text-danger">
+                <ion-icon name="checkmark-outline"></ion-icon> Manutenção
+              </li>
+            </ul>
+          </div>
+          <div class="local">
+            <h1 class="titulo text-center p-1">Onde Atendemos</h1>
+            <ul class="p-2 m-2 bg-gradient rounded-3">
+              <li class="text-danger">
+                <ion-icon name="earth-outline"></ion-icon> Itu, SP
+              </li>
+              <li class="text-danger">
+                <ion-icon name="earth-outline"></ion-icon> Porto Feliz
+              </li>
+              <li class="text-danger">
+                <ion-icon name="earth-outline"></ion-icon> Santana de Parnaíba, SP
+              </li>
+              <li class="text-danger">
+                <ion-icon name="earth-outline"></ion-icon> Salto, SP
+              </li>
+              <li class="text-danger">
+                <ion-icon name="earth-outline"></ion-icon> Sorocaba, SP
+              </li>
+              <li class="text-danger">
+                <ion-icon name="earth-outline"></ion-icon> Itupeva, SP
+              </li>
+              <li class="text-danger">
+                <ion-icon name="earth-outline"></ion-icon> Indaiatuba, SP
+              </li>
+              <li class="text-danger">
+                <ion-icon name="earth-outline"></ion-icon> Boituva, SP
+              </li>
+            </ul>
+          </div>
+          <a
+            href="https://www.facebook.com/HelioServItu"
+            target="_blank"
+            class="botao facebook"
+          >
+            <img src="images/facebook.png" alt="" />
           </a>
           <a class="botao whatsapp" id="whats">
-            <img src="images/whatsapp.png" alt="">
+            <img src="images/whatsapp.png" alt="" />
           </a>
-          <a class="botao email" href="mailto:helio.teixeira.instalador@gmail.com">
-            <img src="images/e-mail.png" alt="">
+          <a
+            class="botao email"
+            href="mailto:helio.teixeira.instalador@gmail.com"
+          >
+            <img src="images/e-mail.png" alt="" />
           </a>
-          <a class="botao services" href="">
-            <img src="images/servico-de-entrega.png" alt="">
+          <a class="botao services" id="serviços">
+            <img src="images/servico-de-entrega.png" alt="" />
           </a>
-          <a class="botao maps" href="">
-            <img src="images/mapa.png" alt="">
+          <a class="botao maps" id="ondeEstamos">
+            <img src="images/mapa.png" alt="" />
           </a>
         </div>
       </section>
@@ -67,31 +131,30 @@
         <div class="container-carrossel">
           <div class="gallery-wrapper">
             <button class="arrow-left control" aria-label="Previous image">
-            <ion-icon name="arrow-back-circle-outline"></ion-icon>
-          </button>
-          <button class="arrow-right control" aria-label="Next image">
-            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-          </button>
+              <ion-icon name="arrow-back-circle-outline"></ion-icon>
+            </button>
+            <button class="arrow-right control" aria-label="Next image">
+              <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+            </button>
             <div class="gallery">
-              <img src="images/imagem1.jpg" alt="" class="item current-item">
-              <img src="images/imagem2.jpg" alt="" class="item">
-              <img src="images/imagem3.jpg" alt="" class="item">
-              <img src="images/imagem4.jpg" alt="" class="item">
-              <img src="images/imagem5.jpg" alt="" class="item">
-              <img src="images/imagem6.jpg" alt="" class="item">
-              <img src="images/imagem7.jpg" alt="" class="item">
-              <img src="images/imagem8.jpg" alt="" class="item">
-              <img src="images/imagem9.jpg" alt="" class="item">
-              <img src="images/imagem10.jpg" alt="" class="item">
-              <img src="images/imagem11.jpg" alt="" class="item">
-              <img src="images/imagem12.jpg" alt="" class="item">
+              <img src="images/imagem1.jpg" alt="" class="item current-item" />
+              <img src="images/imagem2.jpg" alt="" class="item" />
+              <img src="images/imagem3.jpg" alt="" class="item" />
+              <img src="images/imagem4.jpg" alt="" class="item" />
+              <img src="images/imagem5.jpg" alt="" class="item" />
+              <img src="images/imagem6.jpg" alt="" class="item" />
+              <img src="images/imagem7.jpg" alt="" class="item" />
+              <img src="images/imagem8.jpg" alt="" class="item" />
+              <img src="images/imagem9.jpg" alt="" class="item" />
+              <img src="images/imagem10.jpg" alt="" class="item" />
+              <img src="images/imagem11.jpg" alt="" class="item" />
+              <img src="images/imagem12.jpg" alt="" class="item" />
             </div>
           </div>
         </div>
       </section>
     </div>
 
-    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
