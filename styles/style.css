@@ -61,8 +61,6 @@ body {
 }
 .topo .posicao-titulo .imagem-sol {
   position: absolute;
-  height: 200px;
-  width: 200px;
   left: 25px;
   top: -10px;
 }

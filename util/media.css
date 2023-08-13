@@ -3,26 +3,24 @@
   .gallery img:nth-child(7),
   .gallery img:nth-child(8),
   .gallery img:nth-child(9),
-  .gallery img:nth-child(12){
+  .gallery img:nth-child(12) {
     display: none;
   }
 }
-@media screen and (max-width: 395px) {
-  .baixo img {
-    max-height: 350px;
-  }
-}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   .container-principal {
     background-image: url("../images/backgroundCell.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .topo .posicao-titulo .imagem-sol {
+    height: 170px;
+    width: 170px;
+  }
   .baixo img {
-    width: 100%;
-    max-height: 400px;
+    max-height: 350px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -31,6 +29,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .baixo img {
+    max-height: 350px;
+  }
+
+  .topo .posicao-titulo .imagem-sol {
+    height: 200px;
+    width: 200px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -108,5 +114,10 @@
     flex-direction: row;
     font-weight: 700;
     padding: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .baixo img {
+    max-height: 350px;
   }
 }
